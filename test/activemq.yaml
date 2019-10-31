@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod                                            # Kubernetes Resource type
+metadata:
+  name: activemq                                  
+spec:                                                
+  containers:
+    - image: davidkhala/activemq-mysql
+      name: activemq-mysql                           # container name, unique in a pod
