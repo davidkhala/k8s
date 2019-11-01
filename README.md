@@ -4,6 +4,7 @@
 ## Notes
 
 - [k8s post](https://www.freecodecamp.org/news/learn-kubernetes-in-under-3-hours-a-detailed-guide-to-orchestrating-containers-114ff420e882/)
+- k8s is a disaster for p2p protocols, it is a very bad match. Great for monolithic microservice stacks, not much else.
 
 
 ## Pod
