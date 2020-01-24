@@ -1,5 +1,8 @@
 # k8s
 
+ * Overheard at KubeCon: "microk8s.status just blew my mind".
+
+     https://microk8s.io/docs/commands#microk8s.status
 
 ## Notes
 
