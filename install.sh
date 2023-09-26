@@ -11,9 +11,6 @@ toolSet() {
 	sudo apt-get install -y kubelet kubeadm kubectl
 	# sudo apt-mark hold kubelet kubeadm kubectl
 }
-minikube() {
-	echo VirtualBox is required for linux system...
-	curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.30.0/minikube-linux-amd64 && chmod +x minikube && sudo cp minikube /usr/local/bin/ && rm minikube
-}
+
 
 $1
