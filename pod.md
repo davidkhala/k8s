@@ -1,7 +1,11 @@
 # Pod
-- Pods can be composed of one or even a group of containers that share the same execution environment, the same volume, same ip, port space(as such they can communicate via localhost but different port), IPC namespace.
+- Pods can be composed of 1+ containers
+- containers in a pod share
+  - the same execution environment, same volume
+  - the same ip, port space(as such they can communicate via localhost but different port)
+  - IPC namespace. This means they can communicate with each other using standard inter-process communication mechanisms (e.g. SystemV semaphores or POSIX shared memory)
 - Each pod has a unique IP address in the Kubernetes cluster
-- Pod communicating with containers of the other pods has to be done in conjunction with the pod ip.
+  - Outbound routing by pod ip: Pod communicating with containers of the other pods has to be done in conjunction with the pod ip.
 
 
 ## Basic structure
