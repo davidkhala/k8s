@@ -1,4 +1,4 @@
-![image](https://github.com/davidkhala/k8s/assets/7227589/b739392a-5c92-47fb-861a-83d3afeb3ff2)# Pod
+# Pod
 - Pods can be composed of 1+ containers
 - containers in a pod share
   - **Storage**: the same execution environment, same volume
