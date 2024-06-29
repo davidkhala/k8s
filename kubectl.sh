@@ -1,11 +1,22 @@
-install(){
+install() {
   sudo snap install kubectl --classic
 }
-version(){
+version() {
   kubectl version --client
 
 }
-logs(){
+logs() {
   kubectl logs --since=1h --tail=200 $1
 }
+namespaces(){
+  kubectl get namespaces -o jsonpath='{.items[*].metadata.name}')
+}
+deployments(){
+  kubectl get deployment -n $namespace --no-headers=true | awk '{print $1}'
+}
+deployment-restart(){
+  kubectl rollout restart deployment $1 -n $namespace  
+}
+
+
 $@
