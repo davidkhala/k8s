@@ -8,7 +8,9 @@ nodes() {
   kubectl get nodes -o 'jsonpath={.items[*].metadata.name}'
 
 }
-
+delete-node() {
+  kubectl drain $node --ignore-daemonsets --delete-emptydir-data
+}
 namespaces() {
   kubectl get namespaces -o jsonpath='{.items[*].metadata.name}'
 }
