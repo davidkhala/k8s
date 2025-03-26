@@ -1,11 +1,17 @@
 # k8s
 
- * Overheard at KubeCon: "microk8s.status just blew my mind".
+* Overheard at KubeCon: "microk8s.status just blew my mind".
 
-     https://microk8s.io/docs/commands#microk8s.status
+     <https://microk8s.io/docs/commands#microk8s.status>
+
+## minikube
+
+Install
+* [Powershell](https://github.com/davidkhala/windows-utils/blob/master/k8s/minikube.ps1)
+* [Linux](https://github.com/davidkhala/linux-utils/blob/main/apps/k8s/minikube.sh)
 
 ## Notes
 
-- [k8s post](https://www.freecodecamp.org/news/learn-kubernetes-in-under-3-hours-a-detailed-guide-to-orchestrating-containers-114ff420e882/)
-- k8s is a disaster for p2p protocols, it is a very bad match. Great for monolithic microservice stacks, not much else.
-- kubeadm@1.12.3 support upper limit is 18.06: https://github.com/kubernetes/minikube/issues/3323
+* [k8s post](https://www.freecodecamp.org/news/learn-kubernetes-in-under-3-hours-a-detailed-guide-to-orchestrating-containers-114ff420e882/)
+* k8s is a disaster for p2p protocols, it is a very bad match. Great for monolithic microservice stacks, not much else.
+* kubeadm@1.12.3 support upper limit is 18.06: <https://github.com/kubernetes/minikube/issues/3323>
