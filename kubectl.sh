@@ -20,5 +20,8 @@ deployments() {
 deployment-restart() {
   kubectl rollout restart deployment $1 -n $namespace
 }
+entrance() {
+  kubectl config view --minify --output 'jsonpath={..server}'
+}
 
-$@
+"$@"
