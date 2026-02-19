@@ -1,5 +1,5 @@
 # Pod
-- Pods can be composed of 1+ containers
+the smallest deployable unit of computing that can be made up of 1+ containers
 - containers in a pod share
   - **Storage**: the same execution environment, same volume
   - **network**: the same ip, port space(as such they can communicate via localhost but different port)
